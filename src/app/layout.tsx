@@ -1,8 +1,16 @@
 import './globals.css'
 import type { Metadata } from 'next'
-import { Inter } from 'next/font/google'
+import localFont from 'next/font/local'
 
-const inter = Inter({ subsets: ['latin'] })
+const oriya = localFont({
+  src: [
+    {
+      path: '../assets/fonts/oriya-mn.ttf',
+      style: 'normal',
+    }
+  ],
+  variable: '--font-oriya',
+})
 
 export const metadata: Metadata = {
   title: 'Andres Molina',
@@ -16,7 +24,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body className={oriya.variable}>
         {children}
         </body>
     </html>

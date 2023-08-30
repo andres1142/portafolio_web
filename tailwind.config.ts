@@ -26,6 +26,9 @@ const config: Config = {
           100: '#4EC7B1'
         },
       },
+      fontFamily: {
+        'oriya': "var(--font-oriya)",
+      }
     },
   },
   plugins: [],
