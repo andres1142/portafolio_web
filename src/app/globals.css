@@ -3,25 +3,33 @@
 @tailwind utilities;
 
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+  --background-rgba: 10, 25, 47,1;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
-}
+
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  background: rgba(var(--background-rgba));
+}
+
+
+.flex_center {
+  @apply flex justify-center items-center;
+}
+
+
+.name {
+  @apply xs:text-[38px] md:text-[58px] lg:text-[78px] 2xl:text-[98px];
+}
+
+.name__role {
+  @apply xs:text-[17px] md:text-[38px] lg:text-[48px] 2xl:text-[60px];
+}
+
+.project_button {
+  @apply xs:w-[200px] xs:h-[50px] md:w-[230px] md:h-[61px] lg:w-[304px] lg:h-[72px] 2xl:w-[380px] 2xl:h-[91px]
+}
+
+.project_button__text {
+  @apply xs:text-[31px] md:text-[37px] lg:text-[41px] 2xl:text-[50px];
 }

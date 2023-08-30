@@ -6,12 +6,25 @@ const config: Config = {
     './src/components/**/*.{js,ts,jsx,tsx,mdx}',
     './src/app/**/*.{js,ts,jsx,tsx,mdx}',
   ],
+  mode: 'jit',
   theme: {
     extend: {
-      backgroundImage: {
-        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-        'gradient-conic':
-          'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
+      screens: {
+        'xs': '380px',  // Example custom breakpoint
+        'sm': '640px',
+        'md': '768px',
+        'lg': '1024px',
+        'xl': '1280px',
+        '2xl': '1536px'
+      },
+      colors: {
+        primary_darkblue: '#0A192F',
+        secondary_lightgray: '#BFD2F5',
+        secondary_darkgray: '#8992B0',
+        comp_green: {
+          DEFAULT: '#47BEA6',
+          100: '#4EC7B1'
+        },
       },
     },
   },
