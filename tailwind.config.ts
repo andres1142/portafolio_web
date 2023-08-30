@@ -10,7 +10,7 @@ const config: Config = {
   theme: {
     extend: {
       screens: {
-        'xs': '380px',  // Example custom breakpoint
+        'xs': '360px',  // Example custom breakpoint
         'sm': '640px',
         'md': '768px',
         'lg': '1024px',

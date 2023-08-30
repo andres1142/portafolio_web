@@ -8,10 +8,10 @@ export default function Home() {
           src='/pattern.svg'
           alt='pattern image'
           fill
-          className='object-cover opacity-70'
+          className='object-cover opacity-60'
         />
 
-        <div className='absolute bottom-48 inset-x-0 flex_center flex-col'>
+        <div className='absolute info_container inset-x-0 flex_center flex-col'>
           {/*Name and Role*/}
           <p className='text-secondary_lightgray name font-oriya'>Andres Molina</p>
           <p className='text-secondary_darkgray name__role font-oriya'>Software Developer</p>

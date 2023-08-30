@@ -18,6 +18,10 @@ body {
 }
 
 
+.info_container {
+   @apply   
+   xs:bottom-48 md:bottom-44 lg:bottom-32 2xl:bottom-28;
+}
 
 .name {
   @apply 
@@ -28,7 +32,7 @@ body {
 .name__role {
   @apply 
   xs:text-[20px] md:text-[38px] lg:text-[48px] 2xl:text-[60px]
-  xs:mb-10 md:mb-12 lg:mb-16 2xl:mb-16
+  xs:mb-10 md:mb-12 lg:mb-14 2xl:mb-14
 }
 
 .project_button {
