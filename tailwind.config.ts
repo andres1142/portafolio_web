@@ -28,6 +28,9 @@ const config: Config = {
       },
       fontFamily: {
         'oriya': "var(--font-oriya)",
+      },
+      backgroundImage: {
+        'pattern': "url('/pattern.svg')",
       }
     },
   },

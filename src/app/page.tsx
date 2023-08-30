@@ -4,7 +4,15 @@ export default function Home() {
   return (
     <main className='overflow-hidden'>
       <div className='relative h-screen w-screen'>
+        <Image
+          src='/pattern.svg'
+          alt='pattern image'
+          fill
+          className='object-cover opacity-70'
+        />
         <div className='absolute bottom-[100px] inset-x-0 flex_center flex-col'>
+
+
           {/*Name and Role*/}
           <h1 className='text-secondary_lightgray name font-oriya'>Andres Molina</h1>
           <h4 className='text-secondary_darkgray name__role font-oriya'>Software Developer</h4>
@@ -16,5 +24,5 @@ export default function Home() {
         </div>
       </div>
     </main>
-)
+  )
 }
