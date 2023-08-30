@@ -18,12 +18,17 @@ body {
 }
 
 
+
 .name {
-  @apply xs:text-[38px] md:text-[58px] lg:text-[78px] 2xl:text-[98px];
+  @apply 
+  xs:text-[38px] md:text-[58px] lg:text-[78px] 2xl:text-[98px]
+  xs:-mb-3 md:-mb-5 lg:-mb-7 2xl:-mb-9
 }
 
 .name__role {
-  @apply xs:text-[17px] md:text-[38px] lg:text-[48px] 2xl:text-[60px];
+  @apply 
+  xs:text-[20px] md:text-[38px] lg:text-[48px] 2xl:text-[60px]
+  xs:mb-10 md:mb-12 lg:mb-16 2xl:mb-16
 }
 
 .project_button {
