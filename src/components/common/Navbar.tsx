@@ -1,24 +1,25 @@
-'use client'
-import React, { useEffect, useState } from 'react'
-import MobileNavbar from './MobileNavbar'
-import WebNavbar from './WebNavbar'
-
-
+import React, { useEffect, useState } from 'react';
+import MobileNavbar from './MobileNavbar';
+import WebNavbar from './WebNavbar';
 
 function Navbar() {
-  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+  const [windowWidth, setWindowWidth] = useState(0);
 
-  {/*Checks the current width of the screen and either shows mobile or web navbar*/}
   useEffect(() => {
     const handleResize = () => {
+      if (typeof window !== 'undefined') {
+        setWindowWidth(window.innerWidth);
+      }
+    };
+
+    if (typeof window !== 'undefined') {
       setWindowWidth(window.innerWidth);
-    };
+      window.addEventListener('resize', handleResize);
 
-    window.addEventListener('resize', handleResize);
-
-    return () => {
-      window.removeEventListener('resize', handleResize);
-    };
+      return () => {
+        window.removeEventListener('resize', handleResize);
+      };
+    }
   }, []);
 
   return (
@@ -28,4 +29,4 @@ function Navbar() {
   );
 }
 
-export default Navbar
+export default Navbar;
