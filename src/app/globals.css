@@ -20,11 +20,10 @@ body {
 
 /*Navbar*/
 
-.menu_option {
+.navbar_item {
   @apply
-  font-oriya text-lg font-semibold 
+  font-oriya text-lg font-semibold text-primary_darkblue md:text-secondary_lightgray-100
 }
-
 
 /*Mian Page*/
 
