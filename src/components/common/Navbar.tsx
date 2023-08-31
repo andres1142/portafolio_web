@@ -6,7 +6,7 @@ import WebNavbar from './WebNavbar'
 
 
 function Navbar() {
-  const [windowWidth, setWindowWidth] = useState(0);
+  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
 
   {/*Checks the current width of the screen and either shows mobile or web navbar*/}
   useEffect(() => {
