@@ -19,7 +19,10 @@ const config: Config = {
       },
       colors: {
         primary_darkblue: '#0A192F',
-        secondary_lightgray: '#BFD2F5',
+        secondary_lightgray: { 
+          DEFAULT :'#BFD2F5',
+          100: '#CED9ED'
+        },
         secondary_darkgray: '#8992B0',
         comp_green: {
           DEFAULT: '#47BEA6',

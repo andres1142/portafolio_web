@@ -1,5 +1,6 @@
 import './globals.css'
 import type { Metadata } from 'next'
+import { Navbar } from '@/components'
 import localFont from 'next/font/local'
 
 const oriya = localFont({
@@ -22,11 +23,13 @@ export default function RootLayout({
 }: {
   children: React.ReactNode
 }) {
+
   return (
     <html lang="en">
       <body className={oriya.variable}>
+        <Navbar />  
         {children}
-        </body>
+      </body>
     </html>
   )
 }

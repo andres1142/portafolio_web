@@ -8,6 +8,7 @@ export default function Home() {
           src='/pattern.svg'
           alt='pattern image'
           fill
+          priority
           className='object-cover opacity-60'
         />
 

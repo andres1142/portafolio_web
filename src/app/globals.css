@@ -18,6 +18,16 @@ body {
 }
 
 
+/*Navbar*/
+
+.menu_option {
+  @apply
+  font-oriya text-lg font-semibold 
+}
+
+
+/*Mian Page*/
+
 .info_container {
    @apply   
    xs:bottom-48 md:bottom-44 lg:bottom-32 2xl:bottom-28;
