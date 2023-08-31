@@ -42,6 +42,14 @@ function NavBar() {
                   </Link>
                 </li>
                 <li className="h-12 navbar_item md:px-6 md:text-center">
+                  <Link href="#Experience" onClick={() => setNavbar(!navbar)}>
+                    <div className='flex gap-2'>
+                      {navbar && window.innerWidth < 768 ? <AcademicCapIcon className='ml-5 w-7 h-7 ' /> : null}
+                      <span>Experience</span>
+                    </div>
+                  </Link>
+                </li>
+                <li className="h-12 navbar_item md:px-6 md:text-center">
                   <Link href="#contact" onClick={() => setNavbar(!navbar)}>
                     <div className='flex gap-2'>
                       {navbar && window.innerWidth < 768 ? <ChatBubbleLeftRightIcon className='ml-5 w-7 h-7' /> : null}

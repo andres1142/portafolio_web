@@ -12,6 +12,10 @@ body {
   background: rgba(var(--background-rgba));
 }
 
+body::-webkit-scrollbar {
+  display: none;
+}
+
 
 .flex_center {
   @apply flex justify-center items-center;
