@@ -1,4 +1,4 @@
-import { Experience } from "@/components";
+import { Contact, Experience } from "@/components";
 import Image from "next/image";
 
 export default function Home() {
@@ -32,6 +32,7 @@ export default function Home() {
         </div>
       </div>
 
+      {/*Experience Section*/}
       <div
         id="Experience"
         className="flex-col py-32 sm:py-0 flex_center h-full sm:h-screen w-screen"
@@ -45,6 +46,22 @@ export default function Home() {
           </h1>
         </div>
         <Experience />
+      </div>
+
+      {/*Contact Section*/}
+      <div
+        id="Contact"
+        className="flex-col py-32 flex_center h-screen w-screen"
+      >
+        <div className="flex-row mb-28">
+          <h4 className="text-secondary_darkgray font-oriya text-2xl text-center">
+            Get in touch
+          </h4>
+          <h1 className="text-secondary_lightgray font-oriya text-6xl text-center">
+            Contact Me
+          </h1>
+        </div>
+        <Contact />
       </div>
     </main>
   );

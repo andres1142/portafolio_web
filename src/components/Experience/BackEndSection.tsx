@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import SectionContainer from "./common/SectionContainer";
+import SectionContainer from "../common/SectionContainer";
 
 function BackEndSection() {
   return (

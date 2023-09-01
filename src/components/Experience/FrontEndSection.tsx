@@ -1,4 +1,4 @@
-import SectionContainer from "./common/SectionContainer";
+import SectionContainer from "../common/SectionContainer";
 import Image from "next/image";
 import React from "react";
 
