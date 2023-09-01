@@ -3,10 +3,8 @@
 @tailwind utilities;
 
 :root {
-  --background-rgba: 10, 25, 47,1;
+  --background-rgba: 10, 25, 47, 1;
 }
-
-
 
 body {
   background: rgba(var(--background-rgba));
@@ -16,42 +14,42 @@ body::-webkit-scrollbar {
   display: none;
 }
 
-
 .flex_center {
   @apply flex justify-center items-center;
 }
 
-
 /*Navbar*/
 
 .navbar_item {
-  @apply
-  font-oriya text-lg font-semibold text-primary_darkblue md:text-secondary_lightgray-100
+  @apply font-oriya text-lg font-semibold text-primary_darkblue md:text-secondary_lightgray-100;
 }
 
 /*Mian Page*/
 
 .info_container {
-   @apply   
-   xs:bottom-48 md:bottom-44 lg:bottom-32 2xl:bottom-28;
+  @apply xs:bottom-48 md:bottom-44 lg:bottom-32 2xl:bottom-28;
 }
 
 .name {
-  @apply 
-  xs:text-[38px] md:text-[58px] lg:text-[78px] 2xl:text-[98px]
-  xs:-mb-3 md:-mb-5 lg:-mb-7 2xl:-mb-9
+  @apply xs:text-[38px] md:text-[58px] lg:text-[78px] 2xl:text-[98px]
+  xs:-mb-3 md:-mb-5 lg:-mb-7 2xl:-mb-9;
 }
 
 .name__role {
-  @apply 
-  xs:text-[20px] md:text-[38px] lg:text-[48px] 2xl:text-[60px]
-  xs:mb-10 md:mb-12 lg:mb-14 2xl:mb-14
+  @apply xs:text-[20px] md:text-[38px] lg:text-[48px] 2xl:text-[60px]
+  xs:mb-10 md:mb-12 lg:mb-14 2xl:mb-14;
 }
 
 .project_button {
-  @apply xs:w-[200px] xs:h-[50px] md:w-[230px] md:h-[61px] lg:w-[304px] lg:h-[72px] 2xl:w-[380px] 2xl:h-[91px]
+  @apply xs:w-[200px] xs:h-[50px] md:w-[230px] md:h-[61px] lg:w-[304px] lg:h-[72px] 2xl:w-[380px] 2xl:h-[91px];
 }
 
 .project_button__text {
   @apply xs:text-[31px] md:text-[37px] lg:text-[41px] 2xl:text-[50px];
+}
+
+/*Experience*/
+
+.logo_desc_container {
+  @apply flex items-center w-36 m-4;
 }
