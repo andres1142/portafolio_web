@@ -46,6 +46,9 @@ export default function Home() {
           </h1>
         </div>
         <Experience />
+        <p className="text-secondary_darkgray font-oriya text-2xl text-center mt-20">
+          And more
+        </p>
       </div>
 
       {/*Contact Section*/}
