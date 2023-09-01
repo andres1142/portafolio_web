@@ -1,35 +1,35 @@
-import './globals.css'
-import type { Metadata } from 'next'
-import { Navbar } from '@/components'
-import localFont from 'next/font/local'
+import "./globals.css";
+import type { Metadata } from "next";
+import { Footer, Navbar } from "@/components";
+import localFont from "next/font/local";
 
 const oriya = localFont({
   src: [
     {
-      path: '../assets/fonts/oriya-mn.ttf',
-      style: 'normal',
-    }
+      path: "../assets/fonts/oriya-mn.ttf",
+      style: "normal",
+    },
   ],
-  variable: '--font-oriya',
-})
+  variable: "--font-oriya",
+});
 
 export const metadata: Metadata = {
-  title: 'Andres Molina',
-  description: 'A personal website for Andres Molina',
-}
+  title: "Andres Molina",
+  description: "A personal website for Andres Molina",
+};
 
 export default function RootLayout({
   children,
 }: {
-  children: React.ReactNode
+  children: React.ReactNode;
 }) {
-
   return (
     <html lang="en">
       <body className={oriya.variable}>
-        <Navbar />  
+        <Navbar />
         {children}
+        <Footer />
       </body>
     </html>
-  )
+  );
 }
