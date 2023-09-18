@@ -1,4 +1,4 @@
-import { Contact, Experience } from "@/components";
+import { Contact, Experience, AboutMe } from "@/components";
 import Image from "next/image";
 
 export default function Home() {
@@ -30,6 +30,22 @@ export default function Home() {
             </p>
           </button>
         </div>
+      </div>
+
+      {/*About Me Section*/}
+      <div
+        id="Experience"
+        className="flex-col py-32 sm:py-0 flex_center h-full sm:h-screen w-screen"
+      >
+        <div className="flex-row mb-28">
+          <h4 className="text-secondary_darkgray font-oriya text-2xl text-center">
+            Get To Know Me More
+          </h4>
+          <h1 className="text-secondary_lightgray font-oriya text-6xl text-center">
+            About Me
+          </h1>
+        </div>
+        <AboutMe />
       </div>
 
       {/*Experience Section*/}
