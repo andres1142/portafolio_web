@@ -1,11 +1,18 @@
 interface SectionContainerProps {
   children: React.ReactNode;
   sectionName?: string;
+  className?: string;
 }
 
-function SectionContainer({ children, sectionName }: SectionContainerProps) {
+function SectionContainer({
+  children,
+  sectionName,
+  className,
+}: SectionContainerProps) {
   return (
-    <div className="border-secondary_lightgray-100 border-2 rounded-2xl p-5 mx-10 font-oriya">
+    <div
+      className={`${className} border-secondary_lightgray-100 border-2 rounded-2xl p-5 mx-10 font-oriya`}
+    >
       {sectionName ? (
         <h2 className="text-secondary_lightgray text-3xl text-center my-3">
           {sectionName}

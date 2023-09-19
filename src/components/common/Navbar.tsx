@@ -41,7 +41,7 @@ function NavBar() {
             >
               <ul className="md:h-auto items-center justify-center md:flex">
                 <li className="h-12 navbar_item md:px-6">
-                  <Link href="#about" onClick={() => setNavbar(!navbar)}>
+                  <Link href="#About" onClick={() => setNavbar(!navbar)}>
                     <div className="flex gap-2">
                       {navbar && window.innerWidth < 768 ? (
                         <UserIcon className="ml-5 w-7 h-7" />

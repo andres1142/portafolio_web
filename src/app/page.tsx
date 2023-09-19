@@ -34,8 +34,8 @@ export default function Home() {
 
       {/*About Me Section*/}
       <div
-        id="Experience"
-        className="flex-col py-32 sm:py-0 flex_center h-full sm:h-screen w-screen"
+        id="About"
+        className="flex-col py-32 sm:py-0 flex_center h-full md:h-screen w-screen"
       >
         <div className="flex-row mb-28">
           <h4 className="text-secondary_darkgray font-oriya text-2xl text-center">
@@ -51,7 +51,7 @@ export default function Home() {
       {/*Experience Section*/}
       <div
         id="Experience"
-        className="flex-col py-32 sm:py-0 flex_center h-full sm:h-screen w-screen"
+        className="flex-col py-32 sm:py-0 flex_center h-full md:h-screen w-screen"
       >
         <div className="flex-row mb-28">
           <h4 className="text-secondary_darkgray font-oriya text-2xl text-center">
