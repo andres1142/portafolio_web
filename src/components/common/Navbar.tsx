@@ -1,5 +1,4 @@
 "use client";
-import Image from "next/image";
 import Link from "next/link";
 import {
   Bars3Icon,
@@ -11,6 +10,16 @@ import { useState } from "react";
 
 function NavBar() {
   const [navbar, setNavbar] = useState(false);
+
+  const handleScrollToTarget = (targetId: string) => {
+    setNavbar(false); // Close the navbar if mobile
+    const targetElement = document.getElementById(targetId);
+    if (targetElement) {
+      // Scroll to the target element with a smooth animation
+      targetElement.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   return (
     <div>
       <nav className="w-full bg-secondary_lightgray md:bg-primary_darkblue fixed top-0 left-0 right-0 z-10">
@@ -41,7 +50,13 @@ function NavBar() {
             >
               <ul className="md:h-auto items-center justify-center md:flex">
                 <li className="h-12 navbar_item md:px-6">
-                  <Link href="#About" onClick={() => setNavbar(!navbar)}>
+                  <Link
+                    href="#About"
+                    onClick={(e) => {
+                      e.preventDefault();
+                      handleScrollToTarget("About");
+                    }}
+                  >
                     <div className="flex gap-2">
                       {navbar && window.innerWidth < 768 ? (
                         <UserIcon className="ml-5 w-7 h-7" />
@@ -52,7 +67,13 @@ function NavBar() {
                 </li>
 
                 <li className="h-12 navbar_item md:px-6 md:text-center">
-                  <Link href="#Experience" onClick={() => setNavbar(!navbar)}>
+                  <Link
+                    href="#Experience"
+                    onClick={(e) => {
+                      e.preventDefault();
+                      handleScrollToTarget("Experience");
+                    }}
+                  >
                     <div className="flex gap-2">
                       {navbar && window.innerWidth < 768 ? (
                         <AcademicCapIcon className="ml-5 w-7 h-7 " />
@@ -63,18 +84,13 @@ function NavBar() {
                 </li>
 
                 <li className="h-12 navbar_item md:px-6 md:text-center">
-                  <Link href="#projects" onClick={() => setNavbar(!navbar)}>
-                    <div className="flex gap-2">
-                      {navbar && window.innerWidth < 768 ? (
-                        <AcademicCapIcon className="ml-5 w-7 h-7 " />
-                      ) : null}
-                      <span>Projects</span>
-                    </div>
-                  </Link>
-                </li>
-
-                <li className="h-12 navbar_item md:px-6 md:text-center">
-                  <Link href="#Contact" onClick={() => setNavbar(!navbar)}>
+                  <Link
+                    href="#Contact"
+                    onClick={(e) => {
+                      e.preventDefault();
+                      handleScrollToTarget("Contact");
+                    }}
+                  >
                     <div className="flex gap-2">
                       {navbar && window.innerWidth < 768 ? (
                         <ChatBubbleLeftRightIcon className="ml-5 w-7 h-7" />
