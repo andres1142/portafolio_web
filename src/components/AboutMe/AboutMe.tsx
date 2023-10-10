@@ -59,7 +59,7 @@ function AboutMe() {
           I am a Colombian student currently at Brigham Young University. 
           With nearly two years of experience as a software developer, I am passionate 
           about creating and bringing ideas to life through code. My commitment to personal and 
-          professional growth drives me to continually expand my skillset. Whether it's coding, problem-solving, 
+          professional growth drives me to continually expand my skillset. Whether it&apos;s coding, problem-solving, 
           or staying up-to-date, I thrive on the opportunities to learn and apply my knowledge 
           in practical and creative ways.
         </div>
