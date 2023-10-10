@@ -29,7 +29,7 @@ function NavBar() {
               {/* LOGO */}
               <Link href="/">
                 <h2 className="text-2xl text-primary_darkblue md:text-secondary_lightgray font-bold">
-                  LOGO
+                  Andres Molina
                 </h2>
               </Link>
 

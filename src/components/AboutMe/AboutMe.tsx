@@ -55,12 +55,13 @@ function AboutMe() {
         </div>
 
         {/*Text Container*/}
-        <div className="text-secondary_darkgray text-xl mx-5 text-center mt-10 lg:mt-0">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore omnis
-          sapiente hic odio quod voluptates alias nobis excepturi perspiciatis
-          natus voluptatem exercitationem voluptas quibusdam deserunt impedit
-          libero rerum adipisci, quos nisi velit sunt! Quibusdam magni laborum
-          perspiciatis, eaque quos nobis?
+        <div className="text-secondary_darkgray text-xl mx-5 text-center mt-10 pt-5 lg:mt-0">
+          I am a Colombian student currently at Brigham Young University. 
+          With nearly two years of experience as a software developer, I am passionate 
+          about creating and bringing ideas to life through code. My commitment to personal and 
+          professional growth drives me to continually expand my skillset. Whether it&apos;s coding, problem-solving, 
+          or staying up-to-date, I thrive on the opportunities to learn and apply my knowledge 
+          in practical and creative ways.
         </div>
       </div>
     </section>
